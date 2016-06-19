@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--mproductsreport.html-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Products Report Page</title>
+        <link href="copela.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="copela.js"></script>
+        <script type="text/javascript">
+            function search(val){
+                if(val == "Product Name"){
+                    document.getElementById("productname").style.display = "block";
+                    document.getElementById("pricerange").style.display = "none";
+                    document.getElementById("categoryid").style.display = "none";
+                }
+                if(val == "Price Range"){
+                    document.getElementById("productname").style.display = "none";
+                    document.getElementById("pricerange").style.display = "block";
+                    document.getElementById("categoryid").style.display = "none";
+                }
+                if(val == "Product Category"){
+                    document.getElementById("productname").style.display = "none";
+                    document.getElementById("pricerange").style.display = "none";
+                    document.getElementById("categoryid").style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="titlebgadmin"><label class="titleinadmin">copeLA</label><sup class="titlereginadmin">&reg</sup></div>
+        
+            <div align="center">
+                <form method="POST" action="mprosearch.php" name="editproductcategoryform">
+                    <div align="left" style="padding:6px; float:left"><input type="submit" name="submit19" value="Back"></div>
+                <div align="right" style="padding:6px;"><input type="submit" name="submit19" value="Logout"></div>
+                    <div><p class="admintitle">Products Report</p></div>
+                    <table style="border:0px;">                        
+                        <td style="border:0px; ">                 
+                            <select id="selectsearch" name="selectsearch" class="inputfieldsinaddemp" onchange="search(value);">
+                                <option value="" selected disabled>Select Criteria</option>                         
+                                <option value="Product Name">Product Name</option>
+                                <option value="Price Range">Price Range</option>
+                                <option value="Product Category">Product Category</option>
+                            </select></td>
+                        <td style="border:0px">
+                            <input type="text" placeholder="Product Name" name="productname" id="productname" hidden size="10" style="padding:3px; text-align:center"/>
+                            <input type="number" placeholder="Id" name="categoryid" id="categoryid" min="0" step="any" hidden style="width:75px; padding:3px; text-align:center"/>
+                            <span id="pricerange" hidden>
+                                <input type="number" placeholder="min" name="minprice" id="minprice" min="0" step="any" style="width:75px; padding:3px; text-align:center"/> -  
+                                <input type="number" placeholder="max" name="maxprice" id="maxprice" min="0" step="any" style="width:75px; padding:3px; text-align:center"/>
+                            </span></td>
+                        <td style="border:0px">
+                            <input type="submit" value="Search" class="edituserbutton" onclick="return editproductcategoryform1()"/></td>
+                    </table>
+                </form>
+            </div>
+            <div align="center">
+                <table  style="color:navy">
+                    <thead>
+                        <tr><th>Product Id</th><th>Product Name</th><th>Product Description</th><th>Image url</th><th>Product Category Id</th><th>Product Price</th></tr>
+                    </thead>
+                    <tbody><!--nextpart in mproductsreport.php, also same in mprosearch.php-->
+             

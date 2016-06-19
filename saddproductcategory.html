@@ -1,0 +1,28 @@
+<!--saddproductcategory.html-->
+<!--similar to addemployee.html-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Add Product Category Page</title>
+        <link href="copela.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="copela.js"></script>
+    </head>
+    <body>
+        <div class="titlebgadmin"><label class="titleinadmin">copeLA</label><sup class="titlereginadmin">&reg</sup></div>
+        <form method="POST" action="saddproductcategory.php" >
+            <div align="left" style="padding:6px; float:left"><input type="submit" name="submit6" value="Back"></div>
+            <div align="right" style="padding:6px;"><input type="submit" name="submit6" value="Logout"></div>
+            <div align="center" style="padding:45px">
+            	<fieldset class="fieldset-auto-width">
+            		<legend class="addemptitle">Add Product Category</legend>
+    	        	<table class="tableinaddemp">	        	
+    	        		<tr><td class="padinaddemptable">Category Name</td>
+    	        			<td class="padinaddemptable"><input type="text" placeholder="category name please*" id="addcategoryname" name="addcategoryname" class="inputfieldsinaddemp" maxlength="50"/></td></tr>
+    	        		<tr><td class="padinaddemptable">Category Description</td>
+    	        			<td class="padinaddemptable"><textarea  wrap="soft" rows="4" cols="30" id="addcategorydescription" name="addcategorydescription"  maxlength="1000">This is the most searched product category on this website.. voila!</textarea></td></tr>
+    	        		<tr><td class="padinaddemptable">Category Image</td>
+    	        			<td class="padinaddemptable"><input type="text" placeholder="image url please*" id="addcategoryimage" name="addcategoryimage" class="inputfieldsinaddemp" maxlength="2083"/></td></tr>
+    	        		<tr><td></td><td class="padinaddemptable"><input type="submit" value="Add Product Category" onclick="return addproductcategoryform()" name="addproductcategory" id="addproductcategory" style="width:150px"/></td></tr><div align="center" style="padding:10px"><span style="color:red">
+    	        		<label id="addcategorynameerror" ></label>
+    	        		<label id="addcategorydescriptionerror" ></label>   
+    	        		<label id="addcategoryimageerror" ></label><!--next code in saddproductcategory.php-->     	

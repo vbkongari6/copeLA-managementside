@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--mproductsreport.html-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Orders Report Page</title>
+        <link href="copela.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="copela.js"></script>
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="titlebgadmin"><label class="titleinadmin">copeLA</label><sup class="titlereginadmin">&reg</sup></div>        
+            <div align="center">
+                <form method="POST" action="mordersearch.php" onsubmit="return comparedates()">
+                    <div align="left" style="padding:6px; float:left"><input type="submit" name="submit19" value="Back"></div>
+                <div align="right" style="padding:6px;"><input type="submit" name="submit19" value="Logout"></div>
+                    <div><p class="admintitle">Orders Report</p></div>
+                    <table style="border:0px;">    
+                        <tr>
+                            <td style="border:0px;">
+                                Search Criteria:   Date from
+                                <input type="date" name="startdate" id="startdate" style="width:132px; text-align:center"/> to
+                                <input type="date" name="enddate" id="enddate" style="width:132px; text-align:center"/>;</td>       
+                            <td style="border:0px; ">
+                                <input type="radio" name="productcategory" id="productcategory" style="padding:3px" value="ProductCategory" checked/>Product Category;
+
+                                </td>
+                            <td style="border:0px">
+                                <input type="radio" name="product" id="product" style="padding:3px" value="Product"/>Product;                          
+                                </td>
+                            <td style="border:0px">
+                                <input type="radio" name="specialsale" id="specialsale" style="padding:3px" value="SpecialSale"/>Special Sale;</td>
+                            <td style="border:0px">
+                                <input type="radio" name="orderquantity" id="orderquantity" style="padding:3px" value="OrderQuantity"/>Order Quantity;</td>
+                            <td style="border:0px">
+                                <input type="radio" name="price" id="price" style="padding:3px" value="Price" checked/>Price$;</td>
+                        </tr>
+                        <tr>
+                            <td style="border:0px" align="right">Sort By: 
+                                <input type="radio" name="sortby" id="asc" style="padding:3px" value="ASC"/>Ascending;</td>
+                            <td style="border:0px"><input type="radio" name="sortby" id="dsc" style="padding:3px" value="DSC" checked/>Decending;</td>
+                            <td style="border:0px">
+                                <input type="submit" value="Search" class="edituserbutton" /></td>
+                        </tr>
+                    </table>
+                </form>
+                <p id="error" style="color:red"></p>
+            </div>
+            <div align="center">
+                <table  style="color:navy">
+                    <thead>
+                        <tr><th>Order ID</th><th>Order Date</th><th>Order Qty</th><th>Order Price</th><th>Product Category</th><th>Product Name</th><th>Product Qty</th><th>Product Price</th></tr>
+                    </thead>
+                    <tbody>

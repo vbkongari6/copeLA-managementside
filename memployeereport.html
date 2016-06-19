@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--seditproductcategory-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Employee Report Page</title>
+        <link href="copela.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="copela.js"></script>
+        <script type="text/javascript">
+            function search(val){
+                if(val == "Employee type"){
+                    document.getElementById("emptype").style.display = "block";
+                    document.getElementById("payrange").style.display = "none";
+                }
+                if(val == "Pay Range"){
+                    document.getElementById("emptype").style.display = "none";
+                    document.getElementById("payrange").style.display = "block";}
+                else{
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="titlebgadmin"><label class="titleinadmin">copeLA</label><sup class="titlereginadmin">&reg</sup></div>        
+        <div align="center">
+            <form method="POST" action="mempsearch.php" name="editproductcategoryform">
+                <div align="left" style="padding:6px; float:left"><input type="submit" name="submit18" value="Back"></div>
+                <div align="right" style="padding:6px;"><input type="submit" name="submit18" value="Logout"></div>
+                <div><p class="admintitle">Employee Report</p></div>
+                <table style="border:0px;">
+                    
+                    <td style="border:0px; ">                 
+                        <select id="selectsearch" name="selectsearch" class="inputfieldsinaddemp" onchange="search(value);">
+                            <option value="" selected disabled>Select Criteria</option>                         
+                            <option value="Employee type">Employee Type</option>
+                            <option value="Pay Range">Pay Range</option>
+                        </select></td>
+                    <td style="border:0px">                            
+                        <select id="emptype" name="emptype" class="inputfieldsinaddemp" hidden>
+                            <option value="" selected disabled>Select Usertype</option>                                               
+                            <option value="administrator">Administrator</option>
+                            <option value="manager">Manager</option>
+                            <option value="salesmanager">Sales Manager</option>
+                        </select>
+                        <span id="payrange" hidden>
+                            <input type="number" placeholder="min" name="minpay" id="minpay" min="0" step="any" style="width:75px; padding:3px; text-align:center"/> -  
+                            <input type="number" placeholder="max" name="maxpay" id="maxpay" min="0" step="any" style="width:75px; padding:3px; text-align:center"/>
+                        </span></td>
+                    <td style="border:0px">
+                        <input type="submit" value="Search" class="edituserbutton" onclick="return editproductcategoryform1()"/></td>
+                </table>
+            </form>
+        </div>
+        <div align="center">
+            <table  style="color:navy">
+                <thead>
+                    <tr><th>First Name</th><th>Last Name</th><th>Age</th><th>Usertype</th><th>Salary</th><th>Username</th><th>Password</th></tr>
+                </thead>
+                <tbody><!--nextpart in memployeereport.php-->
+         

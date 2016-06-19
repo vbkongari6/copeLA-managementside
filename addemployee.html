@@ -1,0 +1,43 @@
+<!--addemployee.html-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Add Employee Page</title>
+        <link href="copela.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="copela.js"></script>
+    </head>
+    <body>
+        <div class="titlebgadmin"><label class="titleinadmin">copeLA</label><sup class="titlereginadmin">&reg</sup></div>
+        <form method="POST" action="addemployee.php" >
+        	<div align="left" style="padding:6px; float:left"><input type="submit" name="submit1" value="Back"></div>
+            <div align="right" style="padding:6px;"><input type="submit" name="submit1" value="Logout"></div>
+	        <div align="center" style="padding:45px">
+	        	<fieldset class="fieldset-auto-width">
+	        		<legend class="addemptitle">Add Employee</legend>
+		        	<table class="tableinaddemp">
+		        		<tr><td class="padinaddemptable">Username</td>
+			        		<td class="padinaddemptable"><input type="text" placeholder="username please*" id="addusername" name="addusername" class="inputfieldsinaddemp" maxlength="20"/></td></tr>
+		        		<tr><td class="padinaddemptable">Password</td>
+		        			<td class="padinaddemptable"><input type="password" placeholder="password please*" id="addpassword" name="addpassword" class="inputfieldsinaddemp" maxlength="20"/></td></tr>
+		        		<tr><td class="padinaddemptable">First Name</td>
+		        			<td class="padinaddemptable"><input type="text" placeholder="first name please*" id="addfirstname" name="addfirstname" class="inputfieldsinaddemp" maxlength="50"/></td></tr>
+		        		<tr><td class="padinaddemptable">Last Name</td>
+		        			<td class="padinaddemptable"><input type="text" placeholder="last name please*" id="addlastname" name="addlastname" class="inputfieldsinaddemp" maxlength="20"/></td></tr>
+		        		<tr><td class="padinaddemptable">Age</td>
+		        			<td class="padinaddemptable"><input type="number" placeholder="age please*" id="addage" name="addage" class="inputfieldsinaddemp" /></td></tr>
+		        		<tr><td class="padinaddemptable">Salary</td>
+		        			<td class="padinaddemptable"><input type="number" placeholder="salary please*" id="addsalary" name="addsalary" class="inputfieldsinaddemp" maxlength="6"/></td></tr>
+		        		<tr><td class="padinaddemptable">Usertype</td>
+		        			<td class="padinaddemptable">
+		        				<input type="radio" id="admin" name="addusertype" value="administrator"/>Administrator
+		        				<input type="radio" id="salesmgr" name="addusertype" value="salesmanager"/>Sales Manager
+		        				<input type="radio" id="mgr" name="addusertype" value="manager"/>Manager</td></tr>  
+		        		<tr><td></td><td class="padinaddemptable"><input type="submit" value="Add" name="addemployee" id="addemployee" style="width:100px" onclick="return addemployeepageform()"/></td></tr>	
+		        		<span style="color:red">
+		        		<label id="addusernameerror" ></label>
+		        		<label id="addpassworderror" ></label>   
+		        		<label id="addfirstnameerror" ></label>
+		        		<label id="addlastnameerror" ></label> 
+		        		<label id="addageerror" ></label>
+		        		<label id="addsalaryerror" ></label>
+		        		<label id="addusertypeerror" ></label>

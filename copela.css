@@ -1,0 +1,307 @@
+.bgimage{
+  	background: url(free_american_muscle_car_wallpaper.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bgimageadmin{
+  	background: url(ford_shelby_mustang_gt500e_eleonora_76872_1920x1080.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bgimagesmgr{
+  	background: url(1969_muscle_car_boss_black_mustang_ford_429_93761_1920x1080.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bgimagemgr{
+  	background: url(ford_mustang_red_auto_83298_1920x1080.jpg) no-repeat top fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.titlebg{
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.titlebgadmin{
+	height: 80px;
+	width: 100%;
+	background-color: navy;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.titlebgsmgr{
+	height: 80px;
+	width: 100%;
+	background-color: red;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.titlebgmgr{
+	height: 80px;
+	width: 100%;
+	background-color: yellow;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.title {
+	padding-top: 55px;
+	font-size: 7ex;
+}
+
+.titlereg {
+	font-size: 3ex;
+}
+
+.titleinadmin {
+	padding-top: 55px;
+	font-size: 7ex;
+	color: white;
+}
+
+.titleinsmgr{
+	padding-top: 55px;
+	font-size: 7ex;
+	color: white;
+}
+
+.titleinmgr{
+	padding-top: 55px;
+	font-size: 7ex;
+	color: navy;
+}
+
+.titlereginadmin {
+	font-size: 3ex;
+	color: white;
+}
+
+.titlereginsmgr {
+	font-size: 3ex;
+	color: white;
+}
+
+.titlereginmgr {
+	font-size: 3ex;
+	color: navy;
+}
+
+.login {
+    color: white;
+    margin: 6px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.inputfields {
+    text-align: center;
+    padding: 3px;
+    border-radius: 25px;
+
+}
+
+.loginbutton {
+    text-align: center;
+    padding: 3px;
+    border-radius: 25px;
+    width: 80px;
+    background-color: lightgrey;
+}
+
+.loginbutton:hover {
+	background-color: grey;
+}
+
+.loginpadding {
+	padding-left: 45px;
+}
+
+.requiredfield {
+    color: white;
+}
+
+.echo {
+	color:pink; 
+	font-weight:bold;
+	padding-left: 45px;
+}
+
+::-webkit-input-placeholder {
+    color: #FF69B4;;
+}
+
+.admintitle {
+	text-align: center;
+	font-size: 2.5ex;
+	font-weight: bold;
+	text-decoration: underline;
+	color: navy;
+}
+
+.smgrtitle {
+	text-align: center;
+	font-size: 2.5ex;
+	font-weight: bold;
+	text-decoration: underline;
+	color: red;
+}
+
+.mgrtitle {
+	text-align: center;
+	font-size: 2.5ex;
+	font-weight: bold;
+	text-decoration: underline;
+	color: navy;
+}
+
+.adminae{
+	background-color: green;
+	width: 175px;
+	padding: 10px;
+}
+
+.adminee{
+	background-color: yellow;
+	width: 175px;
+	padding: 10px;
+}
+
+.adminde{
+	background-color: red;
+	width: 175px;
+	padding: 10px;
+}
+
+.admine{
+	padding: 20px;
+}
+
+.admind{
+	text-align: center;
+	padding-top: 5%;
+}
+
+.addempdiv{
+	position:absolute;
+    width:1000px;
+    height:500px;
+    z-index:15;
+    top:35%;
+    left:40.4%;
+    margin:-100px 0 0 -150px;
+}
+
+.addemptitle{
+	text-align: center;
+	font-size: 2.5ex;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+
+.fieldset-auto-width {
+         display: inline-block;
+}
+
+.tableinaddemp{
+	background-color: navy;
+	color: white;
+	padding: 10px;
+}
+
+.inputfieldsinaddemp {
+    text-align: center;
+    padding: 3px;
+}
+
+.padinaddemptable{
+	padding: 8px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.erradd{
+	color: red;
+	text-align: center;
+}
+
+.successadddiv{
+	width: 100%;
+	text-align: center;
+}
+
+.successaddlabel{
+	font-weight: bold;
+	color: navy;
+}
+
+.smgrap{
+	background-color: green;
+	width: 150px;
+	padding: 10px;
+}
+
+.smgrep{
+	background-color: yellow;
+	width: 150px;
+	padding: 10px;
+}
+
+.smgrdp{
+	background-color: red;
+	width: 200px;
+	padding: 10px;
+}
+
+.edituserbutton{
+	padding:3px; 
+	background-color:navy;
+	color:white;
+}
+
+.edituserbutton:hover {
+	background-color: yellow;
+	color: navy;
+}
+
+table, td, th {
+	text-align:center; 
+	border-collapse: collapse;
+	border: 1px solid black;	
+}
+
+.deleteuserbutton{
+	padding:3px; 
+	background-color:navy;
+	color:white;
+	width:100px;
+}
+
+.deleteuserbutton:hover{
+	background-color: red;
+	color: navy;
+}
+
+.addbutton:hover {
+	background-color:green;
+}
